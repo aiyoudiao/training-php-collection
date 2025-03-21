@@ -7,6 +7,6 @@
         刻意练习，每日精进
       </a>
     </div>
-    <a href="/about" class="text-gray-700 hover:text-gray-900">关于</a>
+    <a href="{{route('about')}}" class="text-gray-700 hover:text-gray-900">关于</a>
   </div>
 </footer>
