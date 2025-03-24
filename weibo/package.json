@@ -9,7 +9,11 @@
         "prod": "npm run production",
         "production": "mix --production",
         "generate:controller": "php artisan make:controller StaticPagesController",
-        "help:controller": "php artisan help make:controller"
+        "generate:model": "php artisan make:model Article",
+        "help:controller": "php artisan help make:controller",
+        "database:migrate": "php artisan migrate",
+        "database:rollback": "php artisan migrate:rollback",
+        "database:g-model": "php artisan mack:model Article --migration"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.21",
