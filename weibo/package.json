@@ -14,6 +14,7 @@
         "database:migrate": "php artisan migrate",
         "database:rollback": "php artisan migrate:rollback",
         "database:g-model": "php artisan make:model Article --migration",
+        "database:reset": "php artisan migrate:refresh",
         "router:list": "php artisan route:list"
     },
     "devDependencies": {
