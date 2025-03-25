@@ -10,7 +10,7 @@
       </div>
       <div class="p-6">
         <form method="POST" action="{{ route('users.store') }}">
-          @csrf
+          {{@csrf_field()}}
           <div class="mb-4">
             <label for="name" class="block text-sm font-medium text-gray-700">名称：</label>
             <input type="text" name="name" class="mt-1 block w-full p-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" value="{{ old('name') }}">
