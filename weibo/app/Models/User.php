@@ -48,4 +48,15 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Get the user's Gravatar URL.
+     *
+     * @param string $size
+     * @return void
+     */
+    public function gravatar(string $size = '100') {
+        $hash = md5(strtolower(trim($this->attributes['email'])));
+        return "https://www.gravatar.com/avatar/$hash?s=$size";
+    }
 }

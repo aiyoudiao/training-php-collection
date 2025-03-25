@@ -13,7 +13,8 @@
         "help:controller": "php artisan help make:controller",
         "database:migrate": "php artisan migrate",
         "database:rollback": "php artisan migrate:rollback",
-        "database:g-model": "php artisan mack:model Article --migration"
+        "database:g-model": "php artisan make:model Article --migration",
+        "router:list": "php artisan route:list"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.21",
