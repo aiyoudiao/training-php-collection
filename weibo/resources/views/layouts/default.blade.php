@@ -9,6 +9,7 @@
 <body>
   @include('layouts._header')
   <div class="container mx-auto mt-4">
+    @include('shared._messages')
     @yield('content')
     @include('layouts._footer')
   </div>
