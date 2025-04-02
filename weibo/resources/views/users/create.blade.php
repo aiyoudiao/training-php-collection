@@ -13,22 +13,22 @@
         <form method="POST" action="{{ route('users.store') }}">
           {{@csrf_field()}}
           <div class="mb-4">
-            <label for="name" class="block text-sm font-medium text-gray-700">名称：</label>
+            <label for="name" class="block font-medium text-gray-700">名称：</label>
             <input type="text" name="name" class="mt-1 block w-full p-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" value="{{ old('name') }}">
           </div>
 
           <div class="mb-4">
-            <label for="email" class="block text-sm font-medium text-gray-700">邮箱：</label>
+            <label for="email" class="block font-medium text-gray-700">邮箱：</label>
             <input type="text" name="email" class="mt-1 block w-full p-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" value="{{ old('email') }}">
           </div>
 
           <div class="mb-4">
-            <label for="password" class="block text-sm font-medium text-gray-700">密码：</label>
+            <label for="password" class="block font-medium text-gray-700">密码：</label>
             <input type="password" name="password" class="mt-1 block w-full p-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" value="{{ old('password') }}">
           </div>
 
           <div class="mb-4">
-            <label for="password_confirmation" class="block text-sm font-medium text-gray-700">确认密码：</label>
+            <label for="password_confirmation" class="block font-medium text-gray-700">确认密码：</label>
             <input type="password" name="password_confirmation" class="mt-1 block w-full p-2.5 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" value="{{ old('password_confirmation') }}">
           </div>
 
