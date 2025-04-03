@@ -22,6 +22,10 @@
             <label for="password" class="block text-gray-700 font-medium mb-2">密码：</label>
             <input type="password" name="password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none" value="{{ old('password') }}">
           </div>
+          <div class="flex items-center space-x-2 mb-4">
+            <input type="checkbox" id="exampleCheck1" name="remember" class="cursor-pointer w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+            <label for="exampleCheck1" class="cursor-pointer text-gray-700">记住我</label>
+          </div>
 
           <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition">登录</button>
       </form>

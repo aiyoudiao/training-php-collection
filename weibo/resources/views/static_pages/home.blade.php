@@ -10,11 +10,13 @@
     的示例项目主页。
   </p>
   <p class="text-gray-600 mt-2">一切，将从这里开始。</p>
-  <p class="mt-6">
-    <a href="{{route('signup')}}" class="bg-green-500 text-white text-lg px-6 py-3 rounded-lg shadow-md hover:bg-green-600 transition">
-      现在注册
-    </a>
-  </p>
+  @if(!Auth::check())
+    <p class="mt-6">
+      <a href="{{route('signup')}}" class="bg-green-500 text-white text-lg px-6 py-3 rounded-lg shadow-md hover:bg-green-600 transition">
+        现在注册
+      </a>
+    </p>
+  @endif
 </div>
 
 @stop
