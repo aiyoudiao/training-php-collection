@@ -6,7 +6,7 @@
         @if($msg === 'danger') bg-red-300 text-red-800
         @elseif($msg === 'warning') bg-yellow-300 text-yellow-800
         @elseif($msg === 'success') bg-green-300 text-green-800
-        @elseif($msg === 'info') bg-blue-300 text-blue-800
+        @elseif($msg === 'info') bg-blue-300 text-white
         @endif
         p-4 rounded-lg mb-4">
         {{ session()->get($msg) }}

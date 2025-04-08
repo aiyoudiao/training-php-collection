@@ -1,28 +1,29 @@
 {
-    "private": true,
-    "scripts": {
-        "dev": "npm run development",
-        "development": "mix",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000",
-        "hot": "mix watch --hot",
-        "prod": "npm run production",
-        "production": "mix --production",
-        "generate:controller": "php artisan make:controller StaticPagesController",
-        "generate:model": "php artisan make:model Article",
-        "help:controller": "php artisan help make:controller",
-        "database:migrate": "php artisan migrate",
-        "database:rollback": "php artisan migrate:rollback",
-        "database:g-model": "php artisan make:model Article --migration",
-        "database:reset": "php artisan migrate:refresh",
-        "router:list": "php artisan route:list"
-    },
-    "devDependencies": {
-        "autoprefixer": "^10.4.21",
-        "axios": "^0.21",
-        "laravel-mix": "^6.0.6",
-        "lodash": "^4.17.19",
-        "postcss": "^8.5.3",
-        "tailwindcss": "3.*"
-    }
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production",
+    "generate:controller": "php artisan make:controller StaticPagesController",
+    "generate:model": "php artisan make:model Article",
+    "generate:policy": "php artisan make:policy UserPolicy",
+    "help:controller": "php artisan help make:controller",
+    "database:migrate": "php artisan migrate",
+    "database:rollback": "php artisan migrate:rollback",
+    "database:g-model": "php artisan make:model Article --migration",
+    "database:reset": "php artisan migrate:refresh",
+    "router:list": "php artisan route:list"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "axios": "^0.21",
+    "laravel-mix": "^6.0.6",
+    "lodash": "^4.17.19",
+    "postcss": "^8.5.3",
+    "tailwindcss": "3.*"
+  }
 }

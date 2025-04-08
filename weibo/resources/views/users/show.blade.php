@@ -5,7 +5,7 @@
   <div class="w-full max-w-2xl">
     <div class="w-full">
       <div class="flex justify-center items-center">
-        <section>
+        <section class="text-center">
           @include('shared._user_info', ['user' => $user])
         </section>
       </div>

@@ -627,6 +627,9 @@ video {
 .max-w-lg {
   max-width: 32rem;
 }
+.max-w-3xl {
+  max-width: 48rem;
+}
 .cursor-pointer {
   cursor: pointer;
 }
