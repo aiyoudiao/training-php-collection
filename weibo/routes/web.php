@@ -24,6 +24,7 @@ Route::get('/about', 'StaticPagesController@about')->name('about');
 Route::get('signup', 'UsersController@create')->name('signup');
 
 Route::resource('users', 'UsersController');
+Route::get('users/{user}/edit', 'UsersController@edit')->name('users.edit'); // 显示用户编辑页面
 
 Route::get('login', 'SessionsController@create')->name('login'); // 显示登录页面
 Route::post('login', 'SessionsController@store')->name('login'); // 创建新会话（登录）

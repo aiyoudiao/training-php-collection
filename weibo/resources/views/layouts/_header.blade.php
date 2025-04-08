@@ -12,7 +12,7 @@
                     </button>
                     <div class="absolute right-0 mt-0 w-48 bg-white text-gray-900 shadow-lg rounded-lg hidden overflow-hidden group-hover:block">
                         <a class="block px-4 py-2 hover:bg-gray-200" href="{{ route('users.show', Auth::user()) }}">个人中心</a>
-                        <a class="block px-4 py-2 hover:bg-gray-200" href="#">编辑资料</a>
+                        <a class="block px-4 py-2 hover:bg-gray-200" href="{{ route('users.edit', Auth::user())}}">编辑资料</a>
                         <div class="border-t border-gray-200"></div>
                         <form action="{{ route('logout') }}" method="POST" class="block">
                             {{ csrf_field() }}
