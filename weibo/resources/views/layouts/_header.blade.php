@@ -4,7 +4,7 @@
         <a class="text-xl font-bold" href="{{ route('home') }}">Weibo App</a>
         <ul class="flex items-center space-x-4">
             @if (Auth::check())
-                <li><a class="hover:text-gray-300" href="#">用户列表</a></li>
+                <li><a class="hover:text-gray-300" href="{{route('users.index')}}">用户列表</a></li>
 
                 <li class="relative group">
                     <button class="hover:text-gray-300 focus:outline-none">

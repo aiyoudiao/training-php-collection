@@ -11,11 +11,15 @@
     "generate:controller": "php artisan make:controller StaticPagesController",
     "generate:model": "php artisan make:model Article",
     "generate:policy": "php artisan make:policy UserPolicy",
+    "generate:seeder": "php artisan make:seeder UsersTableSeeder",
     "help:controller": "php artisan help make:controller",
     "database:migrate": "php artisan migrate",
     "database:rollback": "php artisan migrate:rollback",
     "database:g-model": "php artisan make:model Article --migration",
     "database:reset": "php artisan migrate:refresh",
+    "database:seed:all": "php artisan db:seed",
+    "database:seed:user": "php artisan db:seed --class=UsersTableSeeder",
+    "database:seed:fresh": "php artisan migrate:fresh --seed",
     "router:list": "php artisan route:list"
   },
   "devDependencies": {
