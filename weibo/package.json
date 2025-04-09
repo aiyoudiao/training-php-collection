@@ -12,6 +12,7 @@
     "generate:model": "php artisan make:model Article",
     "generate:policy": "php artisan make:policy UserPolicy",
     "generate:seeder": "php artisan make:seeder UsersTableSeeder",
+    "generate:migration:users": "php artisan make:migration add_is_admin_to_users_table --table=users",
     "help:controller": "php artisan help make:controller",
     "database:migrate": "php artisan migrate",
     "database:rollback": "php artisan migrate:rollback",
