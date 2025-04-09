@@ -29,3 +29,5 @@ Route::get('users/{user}/edit', 'UsersController@edit')->name('users.edit'); // 
 Route::get('login', 'SessionsController@create')->name('login'); // 显示登录页面
 Route::post('login', 'SessionsController@store')->name('login'); // 创建新会话（登录）
 Route::delete('logout', 'SessionsController@destroy')->name('logout'); // 删除会话（登出）
+
+Route::get('signup/confirm/{token}', 'UsersController@confirmEmail')->name('confirm_email'); // 邮箱确认
