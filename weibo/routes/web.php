@@ -31,3 +31,9 @@ Route::post('login', 'SessionsController@store')->name('login'); // 创建新会
 Route::delete('logout', 'SessionsController@destroy')->name('logout'); // 删除会话（登出）
 
 Route::get('signup/confirm/{token}', 'UsersController@confirmEmail')->name('confirm_email'); // 邮箱确认
+
+Route::get('password/reset', 'PasswordController@showLinkRequestForm')->name('password.request'); // 显示重置密码请求表单
+Route::post('password/email', 'PasswordController@sendResetLinkEmail')->name('password.email'); // 发送重置密码链接
+
+Route::get('password/reset/{token}', 'PasswordController@showResetForm')->name('password.reset'); // 显示重置密码表单
+Route::post('password/reset', 'PasswordController@reset')->name('password.update'); // 重置密码
