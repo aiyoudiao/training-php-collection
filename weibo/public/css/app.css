@@ -636,6 +636,9 @@ video {
 .max-w-xl {
   max-width: 36rem;
 }
+.max-w-4xl {
+  max-width: 56rem;
+}
 .cursor-not-allowed {
   cursor: not-allowed;
 }
