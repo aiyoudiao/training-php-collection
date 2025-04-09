@@ -21,6 +21,7 @@
     "database:seed:all": "php artisan db:seed",
     "database:seed:user": "php artisan db:seed --class=UsersTableSeeder",
     "database:seed:fresh": "php artisan migrate:fresh --seed",
+    "artisan:activated:all": "App\\Models\\User::where('activated', false)->update(['activated' => true, 'activation_token' => null])",
     "router:list": "php artisan route:list"
   },
   "devDependencies": {
