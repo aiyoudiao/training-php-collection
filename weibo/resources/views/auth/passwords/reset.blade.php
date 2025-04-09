@@ -2,7 +2,7 @@
 @section('title', '更新密码')
 
 @section('content')
-    <div class="max-w-4xl mx-auto px-4">
+    <div class="max-w-xl mx-auto px-4">
         <div class="bg-white shadow-md rounded-lg overflow-hidden">
             <div class="bg-gray-100 text-primary px-6 py-4 border-b rounded-t-lg">
                 <h5 class="text-lg font-semibold">更新密码</h5>
