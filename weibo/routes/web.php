@@ -37,3 +37,5 @@ Route::post('password/email', 'PasswordController@sendResetLinkEmail')->name('pa
 
 Route::get('password/reset/{token}', 'PasswordController@showResetForm')->name('password.reset'); // 显示重置密码表单
 Route::post('password/reset', 'PasswordController@reset')->name('password.update'); // 重置密码
+
+Route::resource('statuses', 'StatusesController', ['only' => ['store', 'destroy']]); // 微博动态相关的路由，只有 store 和 destroy 方法
