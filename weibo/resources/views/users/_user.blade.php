@@ -6,7 +6,7 @@
     </a>
   </div>
   @can('destroy', $user)
-    <form action="{{route('users.destroy', $user->id)}}" method="POST">
+    <form action="{{route('users.destroy', $user->id)}}" method="POST" onsubmit="return confirm('您确定要删除该用户吗？');">
       {{ csrf_field()}}
       {{ method_field('DELETE')}}
       <button type="submit" class="bg-red-600 text-white hover:bg-red-500 rounded px-2 py-1 text-sm">
