@@ -77,4 +77,48 @@ class User extends Authenticatable
       return $this->statuses()->orderBy('created_at', 'desc');
     }
 
+    /**
+     * 获取当前用户的粉丝
+     */
+    public function followers() {
+      return $this->belongsToMany(User::class, 'followers', 'user_id', 'follower_id');
+    }
+
+    /**
+     * 获取当前用户关注的用户
+     * NOTE: https://learnku.com/courses/laravel-essential-training/8.x/fan-data-table/9860
+     */
+    public function followings() {
+      return $this->belongsToMany(User::class, 'followers', 'follower_id', 'user_id');
+    }
+
+    /**
+     * 关注用户
+     */
+    public function follow($user_ids) {
+      if (!is_array($user_ids)) {
+        $user_ids = compact('user_ids');
+      }
+
+      // 不会出现重复关注用户的情况
+      $this->followings()->sync($user_ids, false);
+    }
+
+     /**
+     * 取消已关注的用户
+     */
+    public function unfollow($user_ids) {
+      if (!is_array($user_ids)){
+        $user_ids = compact('user_ids');
+      }
+      $this->followings()->detach($user_ids);
+    }
+
+    /**
+     * 检查当前用户是否关注了某个用户
+     */
+    public function isFollowing($user_id) {
+      return $this->followings->contains($user_id);
+    }
+
 }
