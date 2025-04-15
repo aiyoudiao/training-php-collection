@@ -16,6 +16,9 @@
                     <section class="flex flex-col justify-center items-center">
                         @include('shared._user_info', ['user' => Auth::user()])
                     </section>
+                    <section class="overflow-auto p-0 mt-2">
+                      @include('shared._stats', ['user' => Auth::user()])
+                    </section>
                 </aside>
             </div>
         </div>
